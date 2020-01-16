@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+
+     <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+ <script src="js/admin.js"></script>
+  <script src="js/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">  
+    <title>Tempo</title>
+</head>
+<body>
+
+    <div class="local">
+        <h1 class="localNome">Joinville, SC</h1>
+    </div>
+
+    <div class="temperatura">
+    <h1 class="data0"  id="data0"></h1>
+        <div class="icon0" id="icon0">
+        <img src="icons/unknown.png" alt="" id="boton">
+        </div>
+        <div class="section-grau" >
+        <h2 class="grauTemp0" id="grauTemp0">--</h2>
+        <span>ºC</span>
+        </div>
+        <div class="descTemp0" id="descTemp0">--</div>
+    </div>
+     <div class="temperatura">
+    <h1 class="data1" id="data1"></h1>
+    <div class="icon1" id="icon1">
+        <img src="icons/unknown.png" alt="">
+    </div>
+    <div class="section-grau">
+        <h2 class="grauTemp1" id="grauTemp1">--</h2>
+        <span>ºC</span>
+        </div>
+        <div class="descTemp1" id="descTemp1">--</div>
+
+    </div>
+    <div class="temperatura">
+        <h1 class="data2" id="data2"></h1>
+    <div class="icon2" id="icon2">
+        <img src="icons/unknown.png" alt="">
+    </div>
+    <div class="section-grau">
+        <h2 class="grauTemp2" id="grauTemp2"></h2>
+        <span>ºC</span>
+        </div>
+        <div class="descTemp2" id="descTemp2">--</div>
+    </div>
+    
+     <div class="temperatura">
+         <h1 class="data3" id="data3"></h1>
+    <div class="icon3" id="icon3">
+        <img src="icons/unknown.png" alt="">
+    </div>
+    <div class="section-grau" >
+        <h2 class="grauTemp3" id="grauTemp3">--</h2>
+        <span>ºC</span>
+        </div>
+        <div class="descTemp3" id="descTemp3"></div>
+
+    </div>
+    <div class="temperatura">
+        <h1 class="data4"  id="data4"></h1>
+    <div class="icon4"  id="icon4">
+        <img src="icons/unknown.png" alt="">
+    </div>
+    <div class="section-grau">
+        <h2 class="grauTemp4"  id="grauTemp4">--</h2>
+        <span>ºC</span>
+        </div>
+        <div class="descTemp4"  id="descTemp4">--</div>
+
+    </div> 
+
+<div id="modalAviso"></div>
+<h3>Entradas registradas</h3>
+<form id="filtraClima" class="frmFiltrar">
+	<fieldset>
+		<legend>Filtrar</legend>
+		<input type="text" name="txtbusca" id="campoBuscaClima"
+			placeholder="Pesquise pela info">
+		<button type="button" onclick="WEATHER.clima.buscarPorNome()">Buscar</button>
+	</fieldset>
+</form>
+<div id="listaClimas" class="listaRegistros"></div>
+<div id="modalEditaClima" class="modalEditar">
+	<form name="frmEditaClima" id="editaClima" class="frmEditar">
+		<table>
+			<tr>
+				<th>Entrada</th>
+				<td>
+				<input type="text" name="nome">
+				</td>
+			</tr>
+		</table>
+		<input type="hidden" name="idClima">
+	</form>
+</div>
+<script src="js/clima.js"></script>
+</body>
+</html>

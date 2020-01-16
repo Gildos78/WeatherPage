@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    background:#435e9c;
+    font-family:sans-serif;
+    color:white;
+}
+.local,
+.temperatura{
+	height:30vh;
+	width:50%;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.temperatura{
+	flex-direction: row;
+}
+.section-grau{
+display: flex;
+align-items: center;	
+}
+.section-grau span{
+	margin: 10px;
+	font-size: 30px;
+}
+.section-grau h2{
+	font-size: 40px;
+}
+/*****Formulários******/
+.frmInserir, .frmFiltrar{
+	margin:0px auto;
+	margin-bottom: 10px;
+}
+.frmInserir{
+	width: 500px;
+}
+.frmFiltrar{
+	width:350px;
+}
+.frmInserir label{
+	width: 200px;
+}
+.frmInserir input, .frmInserir textarea, .frmInserir select{
+	width: 500px;
+	padding: 2px 0;
+}
+.frmInserir textarea {
+	height: 300px;
+	resize: none;
+}
+.frmInserir button, .frmFiltrar button{
+	width: 100px;
+	margin:0 1%;
+	background-color: #b1ccf5;
+	font-weight: bold;
+	font-size: 16px;
+	float: right;
+}
+.frmInserir .aviso{
+	background-color: #ff0000;
+	color: #fff;
+	font-weight: bold;
+}
+/*****Tabela de registros*****/
+.listaRegistros{
+	margin-bottom:10px;
+}
+.listaRegistros table{
+	border:1px solid #000;
+	border-collapse: collapse;
+	margin:0 auto;
+	min-width:50%;
+}
+.listaRegistros table th{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0 5px;
+	border:transparent;
+}
+.listaRegistros tr, .listaRegistros td, .listaRegistros th{
+	border: 1px solid transparent;
+	padding: 0px 5px;
+}
+.listaRegistros tr, .listaRegistros td{
+	font-size: 16px;
+}
+.listaRegistros tr:nth-child(even) {
+background-color:transparent;	
+}
+.listaRegistros tr:nth-child(odd) {
+background-color:transparent;	
+}
+
+.listaRegistros table img{
+	padding:0 5px;
+	width:25px;
+	height:20px;
+	cursor:pointer;	
+}
+#modalAviso, .modalEditar{
+	display: none;
+

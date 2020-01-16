@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/************************************
+	Configurações gerais
+************************************/
+body{
+	margin: 0 auto;
+	font-family: "Century Gothic", sans-sherif;	
+}
+/********************************************
+**********Layout geral***********************
+********************************************/
+
+/***************Cabeçalho*******************/
+
+header{
+	height:120px;
+	background-color: #008eb6;
+	position: -webkit-sticky;
+	position:sticky;
+	top:0px;
+}
+header img{
+	float:left;
+	height:100px;
+	width:100px;
+	margin:10px;
+}
+header h1{
+	float:left;
+	margin:30px 0px 15px 30px;
+	font-size: 40px;
+	color:#ffffff;
+}
+/*menu*/
+nav{
+	clear:both;
+	width:70%;
+	display:inline-block;
+	margin:0px auto;
+}
+nav a{
+	color:white;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-decoration: none;
+	text-align: center;
+}
+nav .opcao{
+	float:left;
+	width:19%;
+	background-color: #005f89;
+	padding: 10px 0;
+	margin: 0 0.5%;
+	font-size: 16px;
+}
+nav .opcao:hover{
+	background-color:#83afd3;
+}
+/*Dropdow baseado em w3dschools - http://www.w3dschools.com/css/cssdropdowns.asp */
+/*Usado para posicionar o conteúdo dropdown*/
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+
+/*Conteúdo dropdown (oculto por padrão) */
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #005f89;
+	z-index: 1;
+	width: 100%;
+}
+
+/*Links dentro do dropbox */
+.dropdown-content a{
+	display: block;
+}
+
+/*Mudar cor dos links dropdown ao passar mouse */
+.dropdown-content a:hover {
+	background-color: #83afd3;
+}
+
+/* Mostrar o menu dropdown menu ao passar mouse */
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+section{
+	clear:both;
+	min-height: 460px;
+	width:100%;
+	margin-top:0px;
+}
+
+/* Rodapé */
+footer{
+	background-color:#005f89;
+	color:#fff;
+	text-align:center;
+	padding:10px;
+}
+/******************
+Layout CRUD
+*****************/
+/****Título da primeira página*****/
+
+section h2, section h3{
+	text-align: center;
+}
+/*****Formulários******/
+.frmInserir, .frmFiltrar{
+	margin:0px auto;
+	margin-bottom: 10px;
+}
+.frmInserir{
+	width: 500px;
+}
+.frmFiltrar{
+	width:350px;
+}
+.frmInserir label{
+	width: 200px;
+}
+.frmInserir input, .frmInserir textarea, .frmInserir select{
+	width: 300px;
+	padding: 2px 0;
+}
+.frmInserir textarea {
+	height: 100px;
+	resize: none;
+}
+.frmInserir button, .frmFiltrar button{
+	width: 100px;
+	margin:0 1%;
+	background-color: #b1ccf5;
+	font-weight: bold;
+	font-size: 16px;
+	float: right;
+}
+.frmInserir .aviso{
+	background-color: #ff0000;
+	color: #fff;
+	font-weight: bold;
+}
+/*****Tabela de registros*****/
+.listaRegistros{
+	margin-bottom:10px;
+}
+.listaRegistros table{
+	border:1px solid #000;
+	border-collapse: collapse;
+	margin:0 auto;
+	min-width:50%;
+}
+.listaRegistros table th{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0 5px;
+	border:transparent;
+}
+.listaRegistros tr, .listaRegistros td, .listaRegistros th{
+	border: 1px solid #B0C4DE;
+	padding: 0px 5px;
+}
+.listaRegistros tr, .listaRegistros td{
+	font-size: 16px;
+}
+.listaRegistros tr:nth-child(even) {
+background-color:#b1ccf5;	
+}
+.listaRegistros tr:nth-child(odd) {
+background-color:#83afd3;	
+}
+.listaRegistros .acoes{
+	width:70px;
+}
+.listaRegistros table img{
+	padding:0 5px;
+	width:20px;
+	height:20px;
+	cursor:pointer;	
+}
+#modalAviso, .modalEditar{
+	display: none;
+}
